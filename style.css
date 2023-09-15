@@ -1,0 +1,227 @@
+@font-face {
+  font-family: handler;
+  src: url(fonts/TrashHand.TTF);
+}
+
+.savemenu{
+  width: 40vh;
+  height: 60%;
+
+background-image: url(images/setupdark.png);
+background-size: cover;
+background-repeat: no-repeat;
+z-index: -100;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+position: fixed;
+box-shadow: 0 0 500px rgba(0,0,0,1) inset;
+overflow-y: auto;
+border-style: solid;
+border-color: #00ff2a;
+overflow-x: hidden;
+min-width: 100px;
+
+}
+
+.savetext{
+  top: 10vh;
+  left: 1vh;
+  color: white;
+position: absolute;
+font-size: 15px;
+overflow: auto;
+
+}
+
+
+
+
+
+body{
+background-image: url(images/pureblack.png);
+
+}
+
+.background{
+  cursor:url(images/hand3.png), auto;
+  min-height: 100%;
+  height: 100%;
+  background-image: url(images/pureblack.png);
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -15;
+  box-shadow: 0 0 200px rgba(0,0,0,1) inset;
+}
+
+.handler{
+top: 10%;
+right: 10%;
+position: absolute;
+  width: 15%;
+  height: auto;
+  pointer-events: none;
+  cursor:url(images/skull2.png), auto;
+
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px grey; 
+  width: 10px;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+
+handlertext {
+  top: 10%;
+  position: absolute;
+  right: 24.50%;
+  font: 12px sans-serif;
+  border: 1px solid rgb(255, 0, 0);
+  background: rgba(9, 85, 32, 0.493);
+  padding: 5px;
+  width: 20%;
+  height: 60%;
+  font-family: handler;
+  color: #b30000;
+
+  font-size: min(20px, 40px);
+  letter-spacing: 3px;
+  margin: 5px;
+  text-shadow: 2px 2px .01px rgb(0, 0, 0);
+overflow: auto;
+}
+
+handlertext#visible {
+  overflow: visible;
+}
+handlertext#hundler {
+  overflow: auto;
+}
+p#scroll {
+  overflow: scroll;
+}
+handlertext#hidden {
+  overflow: hidden;
+}
+
+
+
+.border {
+  background: url(images/Divine_Light_Border);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated;                 /* Universal support since 2021   */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+.save{
+  width: 25vh;
+  height: 25vh;
+  max-width: 50px;
+  max-height: 50px;
+
+position: fixed;
+top: 10%;
+left: 13%;
+
+background-image: url(images/floppy.png);
+
+background-size: cover;
+
+}
+.save:hover{
+
+  background-image: url(images/thumb.png);
+}
+
+.load{
+  height: 100px;
+  width: auto;
+  cursor:url(images/hover.png), auto;
+  
+  }
+
+  .divine{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    pointer-events: none
+    ;
+    z-index: 1000;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+width: 100%;
+height: 100vh;
+image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+image-rendering: -moz-crisp-edges;          /* Firefox                        */
+image-rendering: -o-crisp-edges;            /* Opera                          */
+image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+image-rendering: pixelated;                 /* Universal support since 2021   */
+image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+-ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+
+
+  }
+
+
+  .countdown{
+    color: rgb(255, 0, 0);     
+font-family: handler;
+     z-index: 1000; position: fixed;
+left: 42%;
+top: 15vh;
+font-size: 20vh;
+text-shadow: 2px 2px .01px rgb(0, 0, 0);
+pointer-events: none
+;
+-khtml-user-select: none;
+-o-user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;    -khtml-user-select: none;
+-o-user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+  }
+
+  
